@@ -22,7 +22,7 @@ This Deepfake Detection project provides a complete pipeline for identifying man
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/cgdhanush/deepfake
+git clone https://github.com/prasannakumar9i/deepfake-detection
 cd deepfake
 ```
 
