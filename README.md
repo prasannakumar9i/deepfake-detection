@@ -86,11 +86,10 @@ This command starts the FastAPI server. Visit `http://localhost:8000` to:
 * View detection results
 
 ---
-# Deepfake Detector Configuration
+## Deepfake Detector Configuration Setup
 
-This document describes the configuration used for training and running the **DeepfakeDetector_v2** model.
+### Create a file named config.json inside the user_data folder and add this content:
 
-## Model Configuration
 
 ```json
 {
