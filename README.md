@@ -86,3 +86,37 @@ This command starts the FastAPI server. Visit `http://localhost:8000` to:
 * View detection results
 
 ---
+# Deepfake Detector Configuration
+
+This document describes the configuration used for training and running the **DeepfakeDetector_v2** model.
+
+## Model Configuration
+
+```json
+{
+    "models": {
+        "cnn_backbone": "xception",
+        "vit_backbone": "vit_tiny_patch16_224"
+    },
+
+    "model_name": "DeepfakeDetector_v2",
+
+    "datasets": [
+        "Actors",
+        "Deepfakes",
+        "FaceSwap",
+        "DeepFakeDetection"
+    ],
+    "dataset_size": 500,
+
+    "api_server": {
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "jwt_secret_key": "f60d8a2b8e6307dbb2e9165db4640af1aef5b7fca99ecb63f8e61c7a9c1515f5",
+        "CORS_origins": []
+    },
+
+    "verbosity": 0,
+    "mode": "train"
+}
